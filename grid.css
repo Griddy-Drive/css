@@ -1,108 +1,94 @@
+<style>
+@import url('https://cdn.jsdelivr.net/gh/Griddy-Drive/css/grid.css');
 
+ 
 @import url('https://fonts.cdnfonts.com/css/ds-digital');
-  :global(.no-daisy *) {
-    all: unset; /* Unsets all styles */
-  }
-  .container {
-    
-    height: fit-content;
- margin-left: -2000px;
-    background-color: #00000000;
-    position: absolute;
+.player-grid-no-daisy * {
+  all: unset; /* Unsets all styles */
+}
+.player-grid-container {
+  height: fit-content;
+  margin-left: -2000px;
+  background-color: #00000000;
+  position: absolute;
   width: 1170px;
   margin: 100px auto;
   border: 2px solid rgba(255, 255, 0, 0.05);
 }
 
-.box {
+.player-grid-box {
   box-shadow: inset 100px 100px 100px rgba(0, 0, 0, 0.731);
-possition: absolute;
-height: 200px;
-width: 200px;
-float: left;
-display: inline-block;
-overflow: hidden;
-margin-left: 41px;
-margin-right: 40px;
-margin-top: 40px;
- 
-border: 4px solid #fff;
-background: #000000;
-text-decoration: none;
-color: #fff;
- 
--webkit-transform: rotate(45deg);
--moz-transform: rotate(45deg);
--ms-transform: rotate(45deg);
--o-transform: rotate(45deg);
-transform: rotate(45deg);
-}
-
-.text {
-width: 200px;
-height: 200px;
-display: table-cell;
-vertical-align: middle;
- 
-text-align: center;
-font-family: 'Open Sans', sans-serif;
-font-size: 13px;
-text-transform: uppercase;
--webkit-transform: rotate(-45deg);
--moz-transform: rotate(-45deg);
--ms-transform: rotate(-45deg);
--o-transform: rotate(-45deg);
-transform: rotate(-45deg);
-}
-
-
-
-.container > figure:nth-child(7n+5) {
   possition: absolute;
-margin-left: 185px;
-box-shadow: inset 500px 500px 100px rgb(0, 0, 0);
-
+  height: 200px;
+  width: 200px;
+  float: left;
+  display: inline-block;
+  overflow: hidden;
+  margin-left: 41px;
+  margin-right: 40px;
+  margin-top: 40px;
+  border: 4px solid #fff;
+  background: #000000;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
-.container > figure:nth-child(n+5) {
+
+.player-grid-text {
+  width: 200px;
+  height: 200px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.player-grid-container > figure:nth-child(7n+5) {
   possition: absolute;
-margin-top: -65px;
+  margin-left: 185px;
+  box-shadow: inset 500px 500px 100px rgb(0, 0, 0);
 }
-
-.clear::after {
+.player-grid-container > figure:nth-child(n+5) {
   possition: absolute;
-content: '';
-display: table;
-clear: both;
+  margin-top: -65px;
 }
-img{
 
+.player-grid-clear::after {
+  possition: absolute;
+  content: '';
+  display: table;
+  clear: both;
+}
+.player-grid-img {
   filter: sepia(100%) hue-rotate(-50deg) saturate(200%);
-size: 10%;
+  size: 10%;
   opacity: 90%;
-zoom: 60%;
-rotate:   -45deg;
-margin-left: -110px;
-margin-top: -100px;
-filter: brightness(50%);
-filter: blur(1px);
-
-
+  zoom: 60%;
+  rotate: -45deg;
+  margin-left: -110px;
+  margin-top: -100px;
+  filter: brightness(50%);
+  filter: blur(1px);
 }
-h1{
-  /* text-shadow: 30px 30px 30px rgb(132, 255, 0);;
-  margin-top: 60px;
-  margin-left: 60px;
-   color: rgb(0, 255, 38); */
+.player-grid-logo {
   position: absolute;
   font-size: 30px;
- z-index: 2;
- rotate:   -45deg;
- font-family: 'DS-Digital', sans-serif;
-
+  z-index: 2;
+  rotate: -45deg;
+  font-family: 'DS-Digital', sans-serif;
 }
-.uibutton{
-  /* background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5); */
-
+.player-grid-uibutton {
   border: 3px solid yellow;
   border-radius: 20px;
   background-color: rgba(255, 0, 251, 0.439);
@@ -111,14 +97,13 @@ h1{
   align-items: center;
   justify-content: center;
   size: 10%;
-  color: rgb(255, 255, 255)4);
+  color: rgb(255, 255, 255);
   position: absolute;
   font-size: 20px;
- z-index: 2;
+  z-index: 2;
   margin-top: 90px;
   margin-left: 70px;
-   rotate:   -45deg;
- 
+  rotate: -45deg;
 }
 
 .logo {
@@ -180,3 +165,5 @@ h1{
 }
 
 
+
+</style>
