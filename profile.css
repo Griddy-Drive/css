@@ -6,7 +6,7 @@
 *::-webkit-scrollbar {
     display: none;
 } */
-html {
+/* html {
     touch-action: none;
     user-select: none;
     overscroll-behavior: none;
@@ -23,7 +23,7 @@ body {
   width: 100vw;
   overflow: hidden;
   font-family: 'Lato', sans-serif;
-}
+} */
 .main-profile-card-wrapper {
   position: absolute;
   width: 110vw;
